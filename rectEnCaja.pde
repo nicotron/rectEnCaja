@@ -18,7 +18,7 @@ void setup() {
         float x = 0;
         float y = 0;
         Rectangulo r = new Rectangulo(x, y, ancho, alto);
-        rectAll(r);
+        rectAll.add(r);
     }
     
 }
