@@ -8,9 +8,12 @@ Entre cada espacio entre objetos hay un espacio de 5px
 Cada línea comienza con un objeto, y no un espacio.
 */
 
-ArrayList rectAll;
+ArrayList<Rectangulo> rectAll;
+ArrayList<Particle> particles = new ArrayList<Particle>();
 
 void setup() {
+    size(500, 500);
+    rectAll = new ArrayList<Rectangulo>();
     // 10 objects in the array
     for (int i = 0; i < 10; i++) {
         float ancho = (int)random(3) + 50;
@@ -27,5 +30,7 @@ void draw() {
     background(255);
     for (Rectangulo r : rectAll) {
         // métodos
+        r.show();
+        r.caja(mouseX);
     }
 }

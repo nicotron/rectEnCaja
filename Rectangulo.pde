@@ -7,6 +7,16 @@ class Rectangulo {
         this.h = h;
     }
 
-    
+    void caja(float width) {
+        float palabra = x+w;
 
+        if (palabra > width) {
+            y = 11;
+        }
+    }
+
+    void show() {
+        fill(51);
+        rect(x, y, w, h);
+    }
 }
